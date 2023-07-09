@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EL-HA PVC STOLARIJA</title>
+<link rel="stylesheet" href="style.css"> 
+
+<script src="https://kit.fontawesome.com/2578a55b44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Pocetna</a></li>
+                <li><a href="#onama">O nama</a></li>
+                <li><a href="#our-services">Usluge</a></li>
+                <li><a href="#projekti">Projekti</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>EL-HA Stolarija</h1>
+            <p>Najkvalitetniji materijali i<br> najmodernija tehnologija izrade</p>
+        </div>
+    </div>
+</div>
+<!-- o nama -->
+<div id="onama">
+    <div class="container">
+        <div class="row">
+            <div class="onama-col-1">
+            <img src="images/about.jpg">
+            </div>
+            <div class="onama-col-2">
+                <h1 class="naslov">O Nama</h1>
+                <p>Poslujemo na području cijele BiH , a svoje proizvode plasiramo i na zahtjevno inozemno tržište Njemačke, Austrije, Švicarske, Italije i drugdje. Također smo svoj rad uskladili s međunarodnim normama upravljanja kvalitetom prema ISO 9001 i upravljanja okolišem prema ISO 14001. To nas obvezuje da prihvaćamo politiku kvalitete i upravljanja okolišem i s njom povezana pravila dosljedno provodimo u cilju zadovoljstva naših kupaca i očuvanja okoliša.</p>
+                <div class="tab-naslovi">
+                    <p class="tab-links active-link" onclick = "opentab('iskustvo')">Iskustvo</p>
+                    <p class="tab-links" onclick = "opentab('osoblje')">Osoblje</p>
+                    <p class="tab-links" onclick="opentab('proizvodnja')">Proizvodnja</p>
+                </div>
+                <div class="tab-contents active-tab" id="iskustvo">
+                    <ul>
+                        <li><span>Godine</span><br>Preko 20 godina iskustva</li>
+                        <li><span>Klijenti</span><br>Stotine zadovoljnih klijenata</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="osoblje">
+                    <ul>
+                        <li><span>Proizvodnja</span><br>Iskusni i profesionalni proizcodjaci nasih proizvoda</li>
+                        <li><span>Montaza</span><br>Iskusni i profesionalni monteri nasih proizvoda</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="proizvodnja">
+                    <ul>
+                        <li><span>Masine</span><br>Najsavremenije i najmodernije CNC masine</li>
+                        <li><span>Postrojenje</span><br>Savremeno opremljene fabrike proizvodnje</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--products-->
+
+
+<div id="our-services">
+
+    <div class="service-heading">
+      <h1>Nasi proizvodi</h1>
+      <div class="hr"></div>
+    </div>
+
+
+    <div class="main-services">
+
+      <div class="main-inner-services">
+
+        <div class="inner-services">
+          <div class="services-images">
+            <img src="images/proizvod1.jpg" alt="">
+          </div>
+
+          <div class="service-inner-content">
+            <h2>Sobna vrata</h2>
+            <p> Uz naša PVC sobna vrata možete  dati Vašoj kući posebnu vrijednost</p>
+          </div>
+        </div>
+
+        <div class="inner-services">
+          <div class="services-images">
+            <img src="images/proizvod2.jpg" alt="">
+          </div>
+
+          <div class="service-inner-content">
+            <h2>PVC prozori</h2>
+            <p> Nasa PVC prozorska rješenja čine objekte prikladnim za budućnost</p>
+          </div>
+        </div>
+
+        <div class="inner-services">
+          <div class="services-images">
+            <img src="images/komarnici1.jpeg" alt="">
+          </div>
+
+          <div class="service-inner-content">
+            <h2>Komarnici</h2>
+            <p>Mrežica komarnika se složi u paket i otvara se kao harmonika</p>
+          </div>
+        </div>
+
+        <div class="inner-services">
+          <div class="services-images">
+            <img src="images/ulaznavrata.jpeg" alt="">
+          </div>
+
+          <div class="service-inner-content">
+            <h2>Ulazna vrata</h2>
+            <p> Uz naša PVC ulazna vrata možete  dati Vašoj kući posebnu vrijednost i sigurnost</p>
+          </div>
+        </div>
+
+        <div class="inner-services">
+          <div class="services-images">
+            <img src="images/proizvod3.jpg" alt="">
+          </div>
+
+          <div class="service-inner-content">
+            <h2>Roletne za prozore</h2>
+            <p>  Dizajnirane su tako da pružaju zaštitu od sunčevih zraka, vjetra, kiše, snijega, hladnoće, buke i provalnika</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--projects-->
+
+  <div id="projekti">
+    <div class="container">
+      <h1 class="pod-naslov">Nasi projekti</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="images/project2.jpeg">
+          <div class="layer">
+            <h3>Naselje Nova Otoka</h3>
+            <p>Proizvodnja i montaza cjelokupne stolarije u naselju Nova Otoka Sarajevo</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="images/project1.jpeg">
+          <div class="layer">
+            <h3>Naselje Bulevar Stup</h3>
+            <p>Proizvodnja i montaza cjelokupne stolarije u naselju Bulevar Sarajevo</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="images/project4.webp">
+          <div class="layer">
+            <h3>Poslovni prostor Italija</h3>
+            <p>Proizvodnja i montaza cjelokupne stolarije poslovni prostor u Italiji</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--kontakt-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="pod-naslov">Kontaktirajte nas</h1>
+        <p><i class="fa-solid fa-envelope"></i>elhastolarija@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>032 777 098</p>
+        <p><i class="fa-solid fa-location-dot"></i>B Mahala, Visoko</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+         
+        </div>
+        <a href="images/katalog.pdf" class="btn btn2">Preuzmi katalog</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Ime" placeholder="Vase ime" required>
+          <input type="email" name="email" placeholder="Vas email" required>
+          <textarea name="message"  rows="6" placeholder="Vasa poruka"></textarea>
+          <button type="submit" class="btn btn2">Posalji</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Sva prava zadrzava EL-HA Stolarija</p>
+  </div>
+</div>
+
+
+<script src="myscript.js"></script>
+</body>
+</html>
