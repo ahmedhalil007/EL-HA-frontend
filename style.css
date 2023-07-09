@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popinns', sans-serif;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+   background-color:rgba(233, 229, 229, 0.708);
+  
+   color: rgb(0, 0, 0);
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/pozadina2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed ;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    color: #030101;
+    text-decoration: none;
+    font-size: 18pxs; 
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #7a8186;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    color: #030101;
+    font-size: 60px;
+    margin-top: 20%;
+}
+.header-text p{
+    color: #404446;
+}
+
+/* o nama */
+#onama {
+    padding: 80px 0;
+    background-color: #663b3beb;
+    color: rgb(255, 255, 255);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.onama-col-1{
+    flex-basis: 35%;
+}
+.onama-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.onama-col-2{
+    flex-basis: 60%;
+}
+.naslov{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-naslovi{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #010101;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #080607;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*product*/
+
+#our-services{
+    padding: 32px 7%;
+    background-color: rgba(255, 255, 255, 0.89);
+}
+.service-heading{
+    text-align: center;
+    padding: 32px 0;
+    align-items: center;
+}
+.service-heading h1{
+
+    color: #030202;
+    font-size: 60px;
+    font-weight: 600;
+
+}
+.service-heading .hr{
+    width: 15%;
+    background-color: #3d3a3c;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+.main-inner-services{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+.inner-services{
+    flex:  300px;
+    padding: 16px;
+    border: 1px solid #d1cbcbdc;
+}
+.inner-services .services-images img{
+    width: 100%;
+    padding: 16px;
+}
+.inner-services .services-images img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+.service-inner-content{
+    padding: 32px 16px;
+}
+.service-inner-content h2{
+    color: #090909;
+    margin: 16px 0;
+    font-size: 22px;
+    font-weight: 300;
+}
+.service-inner-content p{
+    color: #423e40;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+/*projects*/
+
+#projekti{
+    padding: 50px 0;
+}
+.project-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #a38c8c);
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.project:hover img{
+    transform: scale(1.1);
+
+}
+.project:hover .layer{
+    height: 100%;
+}
+
+/*kontakt*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #907090;
+    margin-right: 15px;
+    font-size: 17px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #907090;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #0b89e2;
+    transform: translateY(-5px);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #000000;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.btn.btn2{
+    display: inline-block;
+    background: #b3b2b3;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #f5f4f4;
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #908e8f;
+    font-weight: 300;
+    margin-top: 20px;
+}
+nav .fas{
+    display: none;
+}
+/*small scr*/
+@media only screen and (max-width: 600px){
+    #header{
+        background-image:url(images/pozadina.jpg);
+        
+    } 
+    .header-text{
+        margin-top: 100%;
+        font-size: 20px;
+        
+    }
+    .header-text h1{
+        font-size: 35px;
+        font-weight: 700;
+        
+    }
+    .header-text p{
+        color: #000000;
+        font-weight: 700;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        color: #9f9d9e;
+    }
+    nav ul{
+        background: #f5f6f7;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .naslov{
+        font-size: 40px;
+    }
+    .onama-col-1, .onama-col-2{
+        flex-basis: 100%;
+    }
+    .onama-col-1{
+        margin-bottom: 30px;
+    }
+    .onama-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .footer{
+        font-size: 14px;
+    }
+}
